@@ -1,7 +1,7 @@
 # Comparador de Imagens
 
 Ele pega a BASE64 da imagem e verifica com a outra,
-se for igual retorna true senão false;
+retorna todas em um Array;
 
 ## Exemplo
 
