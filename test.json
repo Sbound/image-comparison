@@ -1,0 +1,18 @@
+[
+   {
+      "id": "1img",
+      "imagesIdsEqual": [
+         "2img"
+      ]
+   },
+   {
+      "id": "2img",
+      "imagesIdsEqual": [
+         "1img"
+      ]
+   },
+   {
+      "id": "3img",
+      "imagesIdsEqual": []
+   }
+]
