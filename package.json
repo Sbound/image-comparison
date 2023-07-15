@@ -1,15 +1,25 @@
 {
   "name": "comparador-de-imagens",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.9",
+  "description": "Um simples comparador de imagens",
   "main": "index.js",
-  "scripts": {
-    "test": "node dist/test.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "comparador-de-imagens",
+    "imagens",
+    "comparator",
+    "image comparator"
+  ],
+  "author": "danielguirra",
+  "license": "MIT",
   "devDependencies": {
+    "@types/node": "20.4.2",
     "typescript": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sbound/image-comparison.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sbound/image-comparison/issues"
   }
 }
