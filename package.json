@@ -1,6 +1,6 @@
 {
   "name": "comparador-de-imagens",
-  "version": "1.0.9",
+  "version": "1.0.13",
   "description": "Um simples comparador de imagens",
   "main": "index.js",
   "keywords": [

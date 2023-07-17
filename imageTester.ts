@@ -2,8 +2,6 @@ import { ImageEqual, ImageToVerifyBasedInBase64, ImageToVerifyBasedInData } from
 
 
 class ImageComparator {
-  imagesEqual: ImageEqual[] = [];
-
   static verifyByBase64 = (imagesToVerify: ImageToVerifyBasedInBase64[]): ImageEqual[] => {
     const aux: ImageEqual[] = [];
     for (let i = 0; i < imagesToVerify.length; i++) {
