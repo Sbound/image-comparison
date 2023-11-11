@@ -3,7 +3,7 @@ import { ImageEqual, ImageToVerifyBasedInBase64, ImageToVerifyBasedInData } from
 
 class ImageComparator {
   static verifyByBase64 = (imagesToVerify: ImageToVerifyBasedInBase64[]): ImageEqual[] => {
-    const aux: ImageEqual[] = [];
+    const arrayOfImageEqualToReturn: ImageEqual[] = [];
     for (let i = 0; i < imagesToVerify.length; i++) {
       const image = imagesToVerify[i];
       const auxImage: string[] = [];
@@ -12,17 +12,16 @@ class ImageComparator {
           auxImage.push(v.id);
         }
       });
-      let a: ImageEqual = {
+      arrayOfImageEqualToReturn.push({
         id: image.id,
         imagesIdsEqual: auxImage,
-      };
-      aux.push(a);
+      });
     }
-    return aux;
+    return arrayOfImageEqualToReturn;
   };
 
   static verifyByBytes = (imagesToVerify: ImageToVerifyBasedInData[]): ImageEqual[] => {
-    const aux: ImageEqual[] = [];
+    const arrayOfImageEqualToReturn: ImageEqual[] = [];
     for (let i = 0; i < imagesToVerify.length; i++) {
       const image = imagesToVerify[i];
       const auxImage: string[] = [];
@@ -31,13 +30,13 @@ class ImageComparator {
           auxImage.push(v.id);
         }
       });
-      let a: ImageEqual = {
+
+      arrayOfImageEqualToReturn.push({
         id: image.id,
         imagesIdsEqual: auxImage,
-      };
-      aux.push(a);
+      });
     }
-    return aux;
+    return arrayOfImageEqualToReturn;
   };
 }
 

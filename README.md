@@ -1,9 +1,9 @@
 [![npm](https://img.shields.io/npm/v/comparador-de-imagens.svg)](https://www.npmjs.com/package/comparador-de-imagens)
 [![npm](https://img.shields.io/npm/dt/comparador-de-imagens.svg)](https://www.npmjs.com/package/comparador-de-imagens)
 
-# ImageComparator
+# Comparador de imagens
 
-A classe ImageComparator permite comparar imagens com base em seus dados brutos e representações em base64. Essa comparação ajuda a identificar se duas ou mais imagens são iguais.
+O pacote Comparador de imagens permite comparar imagens com base em seus dados brutos e representações em base64. Essa comparação ajuda a identificar se duas ou mais imagens são iguais.
 
 ## Instalação
 

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class ImageComparator {
 }
 ImageComparator.verifyByBase64 = (imagesToVerify) => {
-    const aux = [];
+    const arrayOfImageEqualToReturn = [];
     for (let i = 0; i < imagesToVerify.length; i++) {
         const image = imagesToVerify[i];
         const auxImage = [];
@@ -12,16 +12,15 @@ ImageComparator.verifyByBase64 = (imagesToVerify) => {
                 auxImage.push(v.id);
             }
         });
-        let a = {
+        arrayOfImageEqualToReturn.push({
             id: image.id,
             imagesIdsEqual: auxImage,
-        };
-        aux.push(a);
+        });
     }
-    return aux;
+    return arrayOfImageEqualToReturn;
 };
 ImageComparator.verifyByBytes = (imagesToVerify) => {
-    const aux = [];
+    const arrayOfImageEqualToReturn = [];
     for (let i = 0; i < imagesToVerify.length; i++) {
         const image = imagesToVerify[i];
         const auxImage = [];
@@ -30,13 +29,12 @@ ImageComparator.verifyByBytes = (imagesToVerify) => {
                 auxImage.push(v.id);
             }
         });
-        let a = {
+        arrayOfImageEqualToReturn.push({
             id: image.id,
             imagesIdsEqual: auxImage,
-        };
-        aux.push(a);
+        });
     }
-    return aux;
+    return arrayOfImageEqualToReturn;
 };
 exports.default = ImageComparator;
 //# sourceMappingURL=imageTester.js.map
