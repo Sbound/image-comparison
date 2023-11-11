@@ -21,5 +21,8 @@
   },
   "bugs": {
     "url": "https://github.com/Sbound/image-comparison/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Sbound/image-comparison.git"
   }
 }
